@@ -1,35 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Photography Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Photography Portfolio</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Gallery</h2>
-        <div class="gallery">
-          <img src="image1.jpg" alt="Image 1">
-          <img src="image2.jpg" alt="Image 2">
-          <img src="image3.jpg" alt="Image 3">
-        </div>
-      </section>
-      <section>
-        <h2>NFTs for Sale</h2>
-        <ul>
-          <li><a href="nft1.html">NFT 1</a></li>
-          <li><a href="nft2.html">NFT 2</a></li>
-          <li><a href="nft3.html">NFT 3</a></li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; Elis Photography Portfolio</p>
-    </footer>
-  </body>
+<head>
+	<title>TBMphoto - Photography Portfolio</title>
+	<style>
+		body {
+			background-image: url('https://cdn.pixabay.com/photo/2016/03/04/19/36/cactus-1230551_960_720.jpg');
+			background-size: cover;
+			background-position: center center;
+			font-family: Arial, sans-serif;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		h1 {
+			font-size: 48px;
+			font-weight: bold;
+			margin: 0;
+			text-align: center;
+			text-shadow: 2px 2px #000;
+			margin-bottom: 20px;
+		}
+
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.gallery-item {
+			width: 300px;
+			height: 200px;
+			background-image: url('https://picsum.photos/300/200');
+			background-size: cover;
+			background-position: center center;
+			margin: 20px;
+			box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+		}
+
+		.gallery-item:hover {
+			transform: scale(1.1);
+			box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+		}
+
+		.nft-link {
+			display: block;
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 20px;
+			text-align: center;
+			text-decoration: none;
+			color: #fff;
+			background-color: #000;
+			padding: 10px 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+			transition: all 0.3s ease-in-out;
+		}
+
+		.nft-link:hover {
+			background-color: #fff;
+			color: #000;
+			transform: translateY(-5px);
+			box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>TBMphoto - Photography Portfolio</h1>
+		<div class="gallery">
+			<div class="gallery-item"></div>
+			<div class="gallery-item"></div>
+			<div class="gallery-item"></div>
+			<div class="gallery-item"></div>
+			<div class="gallery-item"></div>
+			<div class="gallery-item"></div>
+		</div>
+		<a href="https://objkt.com/user/TBMphoto" class="nft-link">Check out my NFTs on objkt.com</a>
+	</div>
+</body>
 </html>
